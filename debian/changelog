@@ -1,0 +1,72 @@
+chinese-calendar (0.8.0-0ubuntu1) quantal; urgency=low
+
+  * Add skin changing function code
+  * Add default and blue skin qss files
+  * Add about software info
+  * Add shotcut to hide chinese-calendar when it shows
+
+ -- Mutse Young <yyhoo2.young@gmail.com>  Mon, 12 Aug 2013 14:46:53 +0800
+
+chinese-calendar (0.7.9-0ubuntu1) raring; urgency=low
+
+  * Fix bug #1205242, bug #1206026.
+
+ -- Shine Huang <hostc@163.com> Tue, 30 Jul 2013 13:50:09 +0800
+
+chinese-calendar (0.7.8-0ubuntu1) raring; urgency=low
+
+  * Fix bug #1190936, bug #1192501.
+
+ -- Shine Huang <hostc@163.com> Wed, 19 Jun 2013 17:25:42 +0800
+
+chinese-calendar (0.7.7-0ubuntu1) raring; urgency=low
+
+  * Fix bug #1160698, bug #1164859, bug #1161756, bug #1155491, bug #1160698, bug #1160800.
+
+ -- abelsaber (Yes,it's true) <guiltyritter@gmail.com>  Wed, 17 Apr 2013 08:56:46 +0800
+
+chinese-calendar (0.7.6-0ubuntu4) raring; urgency=low
+
+  * add 03-save-data-per-user.diff (LP: #1160149)
+  * remove debian/postinst, since db will be saved under
+    user's home.
+
+ -- Zhengpeng Hou <zhengpeng-hou@ubuntu.com>  Tue, 26 Mar 2013 22:49:47 +0800
+
+chinese-calendar (0.7.6-0ubuntu3) raring; urgency=low
+
+  * add 02-fix-write-permission.diff. (LP: #1159732) 
+
+ -- Zhengpeng Hou <zhengpeng-hou@ubuntu.com>  Mon, 25 Mar 2013 20:12:01 +0800
+
+chinese-calendar (0.7.6-0ubuntu2) raring; urgency=low
+
+  * Add 01-fix-crash.diff to fix the crash on startup.
+
+ -- Zhengpeng Hou <zhengpeng-hou@ubuntu.com>  Thu, 14 Mar 2013 21:41:07 +0800
+
+chinese-calendar (0.7.6-0ubuntu1) raring; urgency=high
+
+  * Fix bug #1154063, bug #1154075, bug #1154079, bug #1154050.
+  * Modify note function.
+
+ -- abelsaber (Yes,it's true) <guiltyritter@gmail.com> Wed, 13 Mar 2013 10:12:21 +0800
+
+chinese-calendar (0.7.5) raring; urgency=high
+
+  * Fix bug #1124849, bug #1124747, bug #1124831, bug #1131516, bug #1124825, bug #1129925.
+  * Add note function.
+
+ -- abelsaber (Yes,it's true) <guiltyritter@gmail.com>  Tue, 12 Mar 2013 14:25:51 +0800
+
+chinese-calendar (0.7.4) raring; urgency=low
+
+  * Optimize the display of dateitem, add systemtray.
+
+ -- abelsaber (Yes,it's true) <guiltyritter@gmail.com>  Tue, 29 Jan 2013 14:33:08 +0800
+
+chinese-calendar (0.6.2-1) raring; urgency=low
+
+  * Initial release.
+
+ -- abelsaber (Yes,it's true) <guiltyritter@gmail.com>  Tue, 22 Jan 2013 14:10:26 +0800

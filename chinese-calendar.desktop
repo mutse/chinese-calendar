@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=chinese-calendar
+Name[zh_CN]=中国农历
+Comment=Chinese lunar calendar
+Exec=/usr/bin/chinese-calendar
+Icon=chinesecalendar-64.png
+StartupNotify=true
+Terminal=false
+Type=Application
+Categories=GNOME;GTK;Graphics;RasterGraphics;Viewer;
