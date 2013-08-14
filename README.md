@@ -3,7 +3,7 @@ chinese-calendar
 
 Chinese Calendar is a Chinese traditional calendar. It is forked from [launchppad.net](https://launchpad.net/chinese-calendar).
 
-### 0.8.0
+### V0.8.0
 
 1、Added skins changing.
 
