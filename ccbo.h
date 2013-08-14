@@ -56,12 +56,12 @@ struct CCalendar
 {
     int month;
     int day;
-    int gan;
-    int zhi;
+    int gan; /// the Heavenly Stems
+    int zhi; /// the Earthly Branches
     QString cmonth;
     QString cday;
     QString ganzhi;
-    QString shengxiao;
+    QString shengxiao; /// Chinese zodiac
     QString sterm;
     QString caltype;
     QString weekday;
@@ -80,13 +80,16 @@ class CCBO: public QObject
 public:
     CCBO(void);
     ~CCBO(void);
+
     int ctcl_solar_to_lunar(int y,int m,int d,struct CCalendar* ctc);
     bool InitConnection(QString Path);
     int ctcl_savenote(int  y,int m, int d ,QString textedit);
     QString ctcl_displaydata(int y,int m,int d);
+
 private:
     QByteArray lunarstr;
     int maxyear;
+
     int ctcl_calendar_type(int y, int m, int d, int opt);
     int ctcl_date_to_days(int y,int m,int d);
     int ctcl_days_to_date(int y,int x);
@@ -107,6 +110,4 @@ private:
     int ctcl_lunar_month(int y,int m,int d);
     void logSqlError( const QString& Type, const QString& error);
     QString ctcl_common_query(QString type,QString querystr);
-
-
 };

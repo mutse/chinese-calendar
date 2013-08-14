@@ -25,7 +25,6 @@ public:
 
 public slots:
     void accept();
-    void openUrl(QString url);
     
 private:
     Ui::AboutDialog *ui;

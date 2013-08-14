@@ -111,6 +111,12 @@
      <property name="text">
       <string>&lt;a href=https://launchpad.net/chinese-calendar&gt;项目主页&lt;/a&gt;</string>
      </property>
+     <property name="openExternalLinks">
+      <bool>true</bool>
+     </property>
+     <property name="textInteractionFlags">
+      <set>Qt::LinksAccessibleByMouse|Qt::TextSelectableByMouse</set>
+     </property>
     </widget>
    </widget>
    <widget class="QWidget" name="tab_2">

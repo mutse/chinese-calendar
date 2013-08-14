@@ -38,13 +38,16 @@ void DateMaskWidget::mousePressEvent(QMouseEvent *ev)
     {
         emit clickday();
     }
+
     ev->ignore();
 }
+
 #else
 bool DateMaskWidget::event(QEvent *event)
 {
     const QEvent::Type et = event->type();
-    switch ( et ) {
+    switch ( et )
+    {
     case QEvent::MouseButtonDblClick:
         emit clickday();
         return true;
@@ -56,6 +59,7 @@ bool DateMaskWidget::event(QEvent *event)
     default:
         break;
     }
+
     return QWidget::event(event);
 }
 #endif

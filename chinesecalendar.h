@@ -53,7 +53,7 @@ public:
     int clickday;
 
 private:
-    void setCalendar(bool flag = true);
+    void setCalendar();
     void cleardate();
     void clearbackground();
     void createTray();

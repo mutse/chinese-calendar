@@ -3,11 +3,11 @@ TARGET = chinese-calendar
 DEPENDPATH += $$PWD/
 INCLUDEPATH += $$PWD/
 
-inst.files += KylinLunar.db
+inst.files += data/KylinLunar.db
 inst.path = /usr/share/chinese-calendar/db
 inst1.files += img/chinesecalendar-64.png
 inst1.path = /usr/share/pixmaps
-inst2.files += chinese-calendar.desktop
+inst2.files += data/chinese-calendar.desktop
 inst2.path = /usr/share/applications
 default_skin.files += skin/default/chinesecalendarBGyellow.png \
 	skin/default/no.png \
@@ -24,10 +24,7 @@ black_skin.files += skin/black/chinesecalendar.png \
 	skin/black/no-hover.png \
 	skin/black/ok.png \
 	skin/black/ok-hover.png \
-	skin/black/note.png \
-	skin/black/arrow-left.png \
-	skin/black/arrow-right.png \
-	skin/black/arrow-down.png
+	skin/black/note.png
 black_skin.path = /usr/share/chinese-calendar/skin/black
 qss.files += skin/default-skin.qss \
 	skin/blue-skin.qss \

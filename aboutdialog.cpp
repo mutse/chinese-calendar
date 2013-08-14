@@ -16,7 +16,6 @@ AboutDialog::AboutDialog(QWidget *parent) :
 {
     ui->setupUi(this);
     connect(ui->closeBtn, SIGNAL(clicked()), this, SLOT(hide()));
-    connect(ui->lbHomepage, SIGNAL(linkActivated(QString)), this, SLOT(openUrl(QString)));
 
 #ifdef DEBUG
     QFile file(QCoreApplication::applicationDirPath() + "/qss/aboutus.qss");
@@ -26,6 +25,7 @@ AboutDialog::AboutDialog(QWidget *parent) :
     file.open(QFile::ReadOnly);
     QString stylesheet = QObject::tr(file.readAll());
     this->setStyleSheet(stylesheet);
+    file.close();
 }
 
 AboutDialog::~AboutDialog()
@@ -38,7 +38,3 @@ void AboutDialog::accept()
     hide();
 }
 
-void AboutDialog::openUrl(QString url)
-{
-    QDesktopServices::openUrl(QUrl(url));
-}

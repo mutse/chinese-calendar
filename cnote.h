@@ -15,19 +15,24 @@ class Cnote : public QDialog
 public:
     explicit Cnote(QWidget *parent = 0);
     ~Cnote();
-    QPixmap pix;
+
     void paintEvent(QPaintEvent *);
+
+    QPixmap pix;
     QPoint dragPos;
     QTextEdit *textedit;
     QLabel *datelabel;
+
 protected:
     void  mouseMoveEvent(QMouseEvent *event);
     void  mousePressEvent(QMouseEvent *event);
     void  mouseReleaseEvent(QMouseEvent *event);
+
 private:
     QPushButton *ok;
     QPushButton *cancel;
     QPushButton *clearplan;
+
 public slots:
     void savenote();
     void cancelnote();

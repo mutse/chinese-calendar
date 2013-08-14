@@ -23,8 +23,12 @@
 #ifndef DATEITEM_H
 #define DATEITEM_H
 
-#include <QtGui>
 #include <QWidget>
+#if QT_VERSION < QT_VERSION_CHECK(5, 0, 0)
+#include <QtGui>
+#else
+#include <QtWidgets>
+#endif
 #include "datemaskwidget.h"
 #include "ui_dateitem.h"
 

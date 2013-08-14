@@ -7,13 +7,21 @@ Cnote::Cnote(QWidget *parent) :
 {
     setWindowFlags(Qt::FramelessWindowHint);
     setAttribute(Qt::WA_TranslucentBackground);
+
     //pix.load(":/img/note.png",0,Qt::AvoidDither|Qt::ThresholdDither|Qt::ThresholdAlphaDither);
     resize(224,280);
-    textedit = new QTextEdit(this); textedit->setObjectName("textedit");
-    ok = new QPushButton(this); ok->setObjectName("ok");
-    cancel = new QPushButton(this);cancel->setObjectName("cancel");
-    datelabel = new QLabel(this);datelabel->setObjectName("datelabel");
-    clearplan = new QPushButton(this);clearplan->setObjectName("clearplan");
+
+    textedit = new QTextEdit(this);
+    textedit->setObjectName("textedit");
+    ok = new QPushButton(this);
+    ok->setObjectName("ok");
+    cancel = new QPushButton(this);
+    cancel->setObjectName("cancel");
+    datelabel = new QLabel(this);
+    datelabel->setObjectName("datelabel");
+    clearplan = new QPushButton(this);
+    clearplan->setObjectName("clearplan");
+
     textedit->resize(155,140);
     textedit->move(30,60);
     ok->resize(30,30);
@@ -33,9 +41,9 @@ Cnote::Cnote(QWidget *parent) :
     //ok->setIcon(QIcon(":/img/ok.png"));
     //cancel->setIcon(QIcon(":/img/no.png"));
     //textedit->setStyleSheet("QTextEdit{background-color:transparent;border:0 solid;}");
-    connect(this->ok,SIGNAL(clicked()),this,SLOT(savenote()));
-    connect(this->cancel,SIGNAL(clicked()),this,SLOT(cancelnote()));
-    connect(this->clearplan,SIGNAL(clicked()),this,SLOT(clean()));
+    connect(this->ok, SIGNAL(clicked()), this, SLOT(savenote()));
+    connect(this->cancel, SIGNAL(clicked()), this, SLOT(cancelnote()));
+    connect(this->clearplan, SIGNAL(clicked()), this, SLOT(clean()));
 
 }
 
