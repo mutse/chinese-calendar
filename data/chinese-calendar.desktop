@@ -3,6 +3,7 @@ Name=chinese-calendar
 Name[zh_CN]=中国农历
 Comment=Chinese lunar calendar
 Exec=/usr/bin/chinese-calendar
+X-GNOME-Autostart-enabled=true
 Icon=chinesecalendar-64.png
 StartupNotify=true
 Terminal=false
