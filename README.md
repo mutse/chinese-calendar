@@ -5,13 +5,21 @@ Chinese Calendar is a Chinese traditional calendar. It is forked from [launchppa
 
 ### V0.8.0
 
-1、Added skins changing.
+> 1. Added skins changing.
 
-2、Added autostart setting.
+> 2. Added autostart setting.
 
-3、Added a new about info dialog.
+> 3. Added a new about info dialog.
 
-4、Added the DIY skin loading.
+> 4. Added the DIY skin loading.
+
+### V0.8.1
+
+New Features:
+
+> 1. Adding a global shortcut to show or hide the main window.
+
+> 2. Adding the global shortcuts setting.
 
 
 ### Howto Compile ?
