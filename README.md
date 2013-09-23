@@ -17,9 +17,11 @@ Chinese Calendar is a Chinese traditional calendar. It is forked from [launchppa
 
 New Features:
 
-> 1. Adding a global shortcut to show or hide the main window.
+> 1. <s>Adding a global shortcut to show or hide the main window.</s>
 
 > 2. Adding the global shortcuts setting.
+
+> 3. <s>Adding the stars in the date item to indicate whether it has plans or not.</s>
 
 
 ### Howto Compile ?
